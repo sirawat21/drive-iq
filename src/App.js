@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Table, Button } from "./components";
+import { Frame, Table, Button } from "./components";
 
 /* App Configuration */
 const CONFIG = {
@@ -26,15 +26,30 @@ function App() {
   const loadButtonHandler = async () => {
     await fetchDataJSON();
   };
+  /* Add button handler */
+  const addButtonHandler = () => {
+    console.log('add func');
+  }
+  /* Delete button handler */
+  const deleteButtonHandler = () => {
+    setData();
+  };
 
   return (
-    <div>
-      <Table />
-      <Button onClick={loadButtonHandler}>
-        <p>Load</p>
-      </Button>
-      <div>{JSON.stringify(data)}</div>
-    </div>
+    <Frame>
+      <div className="grid grid-rows-1 grid-flow-col">
+        <div>
+          <Button icon="loading" onClick={loadButtonHandler}>Load</Button>
+        </div>
+        <div>
+          <Button buttonStyle="add" icon="adding" onClick={addButtonHandler}>Add</Button>
+          <Button buttonStyle="delete" icon="delete" onClick={deleteButtonHandler}>
+            Delete
+          </Button>
+        </div>
+      </div>
+      <Table data={data} />
+    </Frame>
   );
 }
 
