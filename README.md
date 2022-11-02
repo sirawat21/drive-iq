@@ -14,9 +14,9 @@ Execute ES6 Javascript file:
 ```
    npx babel-node app Weather 5
 ```
-Execute raw Javascript file:
+Execute pure Javascript file:
 ```
-   node ./dist/app.js Weather 5
+   node ./dist/app Weather 5
 ```
 ES6 file build command
 ```

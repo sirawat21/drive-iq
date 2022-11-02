@@ -16,7 +16,7 @@ const main = (async () => {
   // Get arguments
   //   const [category, limit] = process.argv.slice(2);
   const category = "Weather";
-  const limit = "0";
+  const limit = "5";
 
   // Sort data by desc of 'API' property value
   const sortedData = sortByDESC(entries, "API");
