@@ -1,3 +1,5 @@
+import sortJsonArray from "sort-json-array";
+
 /* App Configurations */
 const CONFIG = {
   url: "https://api.publicapis.org/entries",
@@ -8,20 +10,16 @@ const CONFIG = {
 
 /* Main function */
 const main = (async () => {
-  // Fetch API data, froce close when error occurred
+  // Fetch data from API, froce close when error occurred
   const data = await fetchAPI(CONFIG["url"]);
   if (!data) forceClose();
   const { count, entries } = data;
 
   // Get arguments
-  //   const [category, limit] = process.argv.slice(2);
-  const category = "Weather";
-  const limit = "5";
+  const [category, limit] = process.argv.slice(2);
 
   // Sort data by desc of 'API' property value
   const sortedData = sortByDESC(entries, "API");
-  // console.log(`DATA ` + entries[0]['API'])
-  // console.log(`SORT ` + sortedData[0]['API'])
 
   // Filter data by category, froce close if no data in that category
   const filteredData = filterCategory(sortedData, "Category", category);
@@ -48,7 +46,7 @@ async function fetchAPI(url) {
 
 /* Sorting function */
 function sortByDESC(array, field) {
-  const sortedData = array.sort((a, b) => b[field] - a[field]);
+  const sortedData = sortJsonArray(array, field, "des");
   return sortedData;
 }
 
