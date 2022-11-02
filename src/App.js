@@ -14,8 +14,8 @@ function App() {
   const fetchDataJSON = async () => {
     try {
       const response = await fetch(CONFIG["url"]);
-      const rawData = await response.json();
-      setData(rawData);
+      const responseData = await response.json();
+      setData(responseData);
     } catch (error) {
       console.error(error);
       setData("API is not available");
@@ -48,7 +48,7 @@ function App() {
           </Button>
         </div>
       </div>
-      <Table data={data} />
+      <Table dataLists={data} />
     </Frame>
   );
 }
