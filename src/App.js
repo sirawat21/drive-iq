@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import { Table, Button } from "./components";
+
+/* App Configuration */
+const CONFIG = {
+  url: "http://universities.hipolabs.com/search?country=Australia",
+};
 
 function App() {
+  /* Set state for API data */
+  const [data, setData] = useState();
+
+  /* Fetch data from API */
+  const fetchDataJSON = async () => {
+    try {
+      const response = await fetch(CONFIG["url"]);
+      const rawData = await response.json();
+      setData(rawData);
+    } catch (error) {
+      console.error(error);
+      setData("API is not available");
+    }
+  };
+
+  /* Load button handler */
+  const loadButtonHandler = async () => {
+    await fetchDataJSON();
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Table />
+      <Button onClick={loadButtonHandler}>
+        <p>Load</p>
+      </Button>
+      <div>{JSON.stringify(data)}</div>
     </div>
   );
 }
