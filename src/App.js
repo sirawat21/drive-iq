@@ -8,10 +8,10 @@ const CONFIG = {
 
 function App() {
   /* Set state for API data */
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
 
-  /* Fetch data from API */
-  const fetchDataJSON = async () => {
+  /* Load button handler */
+  const loadButtonHandler = async () => {
     try {
       const response = await fetch(CONFIG["url"]);
       const responseData = await response.json();
@@ -22,22 +22,19 @@ function App() {
     }
   };
 
-  /* Load button handler */
-  const loadButtonHandler = async () => {
-    await fetchDataJSON();
-  };
   /* Add button handler */
   const addButtonHandler = () => {
-    if (!data) return;
+    if (data.length == 0) return;
     try {
       setData([...data, data[0]]);
     } catch (error) {
       console.error(error);
     }
   };
+
   /* Delete button handler */
   const deleteButtonHandler = () => {
-    if (!data) return;
+    if (data.length == 0) return;
     try {
       const trimLastRow = data.slice(0, data.length - 1);
       setData(trimLastRow);
@@ -51,19 +48,19 @@ function App() {
       <div className="grid grid-rows-1 grid-flow-col">
         <div>
           <Button icon="loading" onClick={loadButtonHandler}>
-            Load
+            LOAD
           </Button>
         </div>
         <div>
           <Button buttonStyle="add" icon="adding" onClick={addButtonHandler}>
-            Add
+            ADD
           </Button>
           <Button
             buttonStyle="delete"
             icon="delete"
             onClick={deleteButtonHandler}
           >
-            Delete
+            DELETE
           </Button>
         </div>
       </div>
