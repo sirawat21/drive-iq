@@ -1,0 +1,29 @@
+{
+  "name": "drive-iq",
+  "version": "1.0.0",
+  "description": "Create a file which when executed from the command line, prints the values based on the arguments passed. --- API Endpoint [Link](https://api.publicapis.org/entries)",
+  "main": "app.js",
+  "scripts": {
+    "complie": "babel ./app.js --out-dir ./dist",
+    "clear": "rm -rf ./dist",
+    "build": "npm-run-all clear complie"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirawat21/drive-iq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirawat21/drive-iq/issues"
+  },
+  "homepage": "https://github.com/sirawat21/drive-iq#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/node": "^7.20.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.19.4",
+    "npm-run-all": "^4.1.5"
+  }
+}

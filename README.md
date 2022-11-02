@@ -10,8 +10,21 @@ API Endpoint [Link](https://api.publicapis.org/entries)
 print eg: php file.php Weather 5
 - [ ] If no records matches the category, print ‘No results’
 ## Example of command
+Execute ES6 Javascript file:
 ```
-   node app.js Weather 5
+   npx babel-node app Weather 5
+```
+Execute raw Javascript file:
+```
+   node ./dist/app.js Weather 5
+```
+ES6 file build command
+```
+   npm run build
+```
+## Install dependencies
+```
+   npm install -D  npm-run-all @babel/cli @babel/core @babel/node @babel/plugin-proposal-class-properties @babel/preset-env
 ```
 ## Arguments (based on category)
 + Animals
