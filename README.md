@@ -1,5 +1,4 @@
 # Task 1 - API - React
----
 A single Page React application which fetches information from an API and displays the results on a table.
 ---
 API Endpoint [Link](http://universities.hipolabs.com/search?country=Australia)
