@@ -1,5 +1,5 @@
 # Task 2 - API – (NODE.js)
-Create a file which when executed from the command line, prints the values based on the arguments passed.
+A CLI program that displays the result based on passed arguments.
 ---
 ## Example of command
 Execute ES6 Javascript file:
@@ -44,3 +44,6 @@ print eg: php file.php Weather 5
 + Health
 + Jobs
 + Music
+
+## Screenshot Example  
+![](https://media.giphy.com/media/aMg3ltBLJZpvagL01m/giphy.gif)
