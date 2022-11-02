@@ -5,10 +5,10 @@
 -- ---------------------------------------------------------------------------
 -- INITIALISE DATABBASE WITH CHARACTER SET AS UTF-8 UNICODE COLLATION
 -- ---------------------------------------------------------------------------
-CREATE DATABASE IF NOT EXISTS databse_1
+CREATE DATABASE IF NOT EXISTS database_1
 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-USE databse_1;
+USE database_1;
 SHOW TABLES;
 
 -- ---------------------------------------------------------------------------
