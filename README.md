@@ -3,6 +3,11 @@
 ```
    docker-compose up
 ```
+## Generating project data
+!!! The command must run after all containers are built.
+```
+   ./create-sql-project-db.sh
+```
 ## DBMS Detail (phpmyadmin) 
 |   |  Detail |
 |---|---|

@@ -5,6 +5,7 @@ services:
 #######################################
   mysql:
     image: mysql:8.0
+    container_name: mysql
     restart: always
     environment:
       - MYSQL_USER=admin
@@ -16,10 +17,11 @@ services:
       - 3306:3306
 
 #######################################
-# phpmyadmin
+# Phpmyadmin
 #######################################
   phpmyadmin:
     image: phpmyadmin
+    container_name: phpmyadmin
     restart: always
     environment:
       - MYSQL_USER=root
