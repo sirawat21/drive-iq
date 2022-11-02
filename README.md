@@ -24,7 +24,8 @@ ES6 file build command
 ```
 ## Install dependencies
 ```
-   npm install -D  npm-run-all @babel/cli @babel/core @babel/node @babel/plugin-proposal-class-properties @babel/preset-env
+   npm install -D npm-run-all @babel/cli @babel/core @babel/node \
+   @babel/plugin-proposal-class-properties @babel/preset-env
 ```
 ## Arguments (based on category)
 + Animals
