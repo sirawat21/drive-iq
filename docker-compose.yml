@@ -21,14 +21,14 @@ services:
   phpmyadmin:
     image: phpmyadmin
     restart: always
-    ports:
-      - 8080:80
     environment:
       - MYSQL_USER=root
       - MYSQL_PASSWORD=test
       - MYSQL_DATABASE=demoDB
       - PMA_HOST=mariadb
       - PMA_PORT=3306
+    ports:
+      - 8080:80
     links:
       - mariadb
 
