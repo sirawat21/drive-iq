@@ -5,7 +5,7 @@ A single Page React application which fetches information from an API and displa
 API Endpoint [Link](http://universities.hipolabs.com/search?country=Australia)
 
 ## Progress
-- [ ] When the page loads, the table should be empty.
+- [x] When the page loads, the table should be empty.
 - [ ] Based on the API information, structure the table columns and naming
 - [ ] Add three buttons, ‘LOAD’ , ‘DELETE’ and ‘ADD’
 - [ ] When ‘LOAD’ is clicked, fetch the information and display the results on the table
