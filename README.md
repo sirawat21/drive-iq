@@ -4,8 +4,10 @@
    docker-compose up
 ```
 ## DBMS(phpmyadmin) Login
-| Host  | localhost  |
-| Port  | 8080  |
-| Username  | root  |
-| Password  | test  |
-| URL access  | localhost:8080  |
+|   |  Detail |
+|---|---|
+| __Host__  | localhost  |
+| __Port__  | 8080  |
+| __Username__  | root  |
+| __Password__  | test  |
+| __URL Access__  | localhost:8080  |
