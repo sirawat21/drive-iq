@@ -10,6 +10,8 @@ const CONFIG = {
 function App() {
   /* Set inital dispatch hook for further action */
   const dispatch = useDispatch();
+
+  /* Get store variable */
   const dataFromStore = useSelector((state) => state.data.collegeLists);
 
   /* Load button handler */
