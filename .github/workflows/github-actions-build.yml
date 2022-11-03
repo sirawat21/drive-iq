@@ -13,10 +13,18 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Create Node environment
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
 
     - name: Install dependencies
       run: npm install
 
     - name: Test build
       run: npm run build
+
+    - name: Share artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: react-github-actions-build
+        path: build
