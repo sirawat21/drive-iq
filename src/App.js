@@ -1,4 +1,3 @@
-
 import { useDispatch, useSelector } from "react-redux";
 import { setStoreData } from "./store/data/data.action";
 import { Frame, Table, Button } from "./components";

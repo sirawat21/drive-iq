@@ -1,6 +1,6 @@
 import { DATA_ACTION_TYPES } from "./data.type";
 
-/* Set default state*/
+/* Set store */
 const INITIAL_STATE = {
   collegeLists: [],
 };
