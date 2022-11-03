@@ -4,7 +4,7 @@ Present the SQL Query sting which is able to show a broker name and the number o
 ## Screenshot
 ![Result](https://i.imgur.com/S8olH0a.png)
 
-The query string in the figure locates in file "src/query.db.sql".
+The query string in the figure locates in file `src/query.db.sql`.
 ## Usage
 Most of commands base on `Docker` command
 ### STEP[1]
@@ -12,7 +12,7 @@ Start project container
 ```
    docker-compose up
 ```
-Stop project container
+!!! Alditional command for stop program
 ```
    docker-compose down
 ```
