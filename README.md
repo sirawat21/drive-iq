@@ -1,5 +1,5 @@
 # Task 3 - SQL
-![Result](https://i.imgur.com/4dP6cdY.png | width=200)
+![Result](https://i.imgur.com/S8olH0a.png)
 
 This query string in the figure locates in file "src/query.db.sql".
 ## Project commands
