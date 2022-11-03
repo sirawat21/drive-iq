@@ -1,8 +1,7 @@
-# Task 1 - API - React #
-## Single Page Application (React based)
+# Task 1 - API - React (Single Page Application React based)
+## Description
 The application fetches information of college from an API, and display in table.
 Users capable to interact by using provided control buttons(ADD, LOAD, DELETE).
----
 ## API 
 |Source|URL|
 |---|---|
