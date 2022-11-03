@@ -1,5 +1,5 @@
 # Task 1 - API - React
-Single Page Application (React based)
+## Single Page Application (React based)
 The application fetches information of college from an API[Link](http://universities.hipolabs.com/search?country=Australia), and display in table.
 Users capable to interact by using provided control buttons(ADD, LOAD, DELETE).
 ---
