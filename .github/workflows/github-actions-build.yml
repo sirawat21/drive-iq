@@ -1,10 +1,10 @@
-name: Task-2 build
-run-name: Task 2 - Testing build by ${{ github.actor }}
+name: Build
+run-name: Testing build by ${{ github.actor }}
 on:
   push:
-    branches: [task-2]
+    branches: [task-1, task-2]
 jobs:
-  task2:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
