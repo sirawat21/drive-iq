@@ -1,10 +1,11 @@
-name: React run build
+name: Build Task1
 run-name: Testing by ${{ github.actor }}
 on:
   push:
-    branches: [task-1]
+    branches:
+      - task-1
 jobs:
-  build:
+  build-react:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
