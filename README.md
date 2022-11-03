@@ -1,7 +1,6 @@
 # Task 1 - API - React (Single Page Application)
 ## Description
-The application fetches college information from API, and display in table.
-Users capable to interact by using provided control buttons(ADD, LOAD, DELETE).
+The application presents the college information from API, and providing three control buttons(ADD, LOAD, DELETE) for manipulating the information in table.
 ## API 
 |Source|URL|
 |---|---|
