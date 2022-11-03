@@ -1,6 +1,6 @@
-# Task 1 - API - React (Single Page Application React based)
+# Task 1 - API - React (Single Page Application)
 ## Description
-The application fetches information of college from an API, and display in table.
+The application fetches college information from API, and display in table.
 Users capable to interact by using provided control buttons(ADD, LOAD, DELETE).
 ## API 
 |Source|URL|
@@ -18,5 +18,11 @@ should remain as it is )
 ### Bonus Tasks:
 - [x] Using a UI package to optimise the design
 - [x] Use of Redux
-## Dependencies
-- 
+## References
+- React [sorce](https://reactjs.org/docs/getting-started.html)
+- React Dom [sorce](https://reactjs.org/docs/react-dom.html)
+- React Redux [sorce](https://www.npmjs.com/package/react-redux)
+- Redux [sorce](https://redux.js.org/introduction/getting-started)
+- Redux Logger [sorce](https://www.npmjs.com/package/redux-logger)
+- TailwindCSS [sorce](https://tailwindcss.com/docs/installation)
+- TailwindUI [source](https://tailwindui.com/components)
