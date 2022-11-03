@@ -1,12 +1,15 @@
 # Task 3 - SQL
-## Project start command
+[Result](https://i.imgur.com/4dP6cdY.png)
+This query string in the figure locates in file "src/query.db.sql".
+## Project commands
+Start containers
 ```
    docker-compose up
 ```
-## Generating project data
+Generating necessary data
 !!! The command must run after all containers are built.
 ```
-   ./create-sql-project-db.sh
+   ./generating-db.sh
 ```
 ## DBMS Detail (phpmyadmin) 
 |   |  Detail |
