@@ -1,8 +1,9 @@
-name: Build Task2
-run-name: Testing build by ${{ github.actor }}
+name: Build
+run-name: Testing on ${{ github.ref_name }} by ${{ github.actor }}
 on:
   push:
     branches:
+      - task-1
       - task-2
 jobs:
   build:
