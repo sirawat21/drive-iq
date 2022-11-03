@@ -1,4 +1,5 @@
 # Task 2 - API - React (Single Page Application)
+[![Build Task2](https://github.com/sirawat21/drive-iq/actions/workflows/github-actions-build.yml/badge.svg?branch=task-2&event=push)](https://github.com/sirawat21/drive-iq/actions/workflows/github-actions-build.yml)
 ## Description
 The CLI program displays the result from API. The presented result is based on two passed arguments(ctegory, limit).
 ## Screenshot
