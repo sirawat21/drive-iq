@@ -1,6 +1,9 @@
 # Task 1 - API - React (Single Page Application)
 ## Description
 The application presents the college information from API, and providing three control buttons(ADD, LOAD, DELETE) for manipulating the information in table.
+## Screenshot
+## Screenshot Example  
+![](https://media.giphy.com/media/8VmwLy7sqVihyxP1vK/giphy.gif)
 ## API 
 |Source|URL|
 |---|---|
