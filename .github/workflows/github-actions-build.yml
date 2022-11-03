@@ -7,7 +7,7 @@ on:
     branches: [task-1]
 jobs:
   build:
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
     - name: Checkout to the repository
       uses: actions/checkout@v2
