@@ -8,10 +8,6 @@
     "clear": "rm -rf ./dist",
     "build": "npm-run-all clear complie"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sirawat21/drive-iq.git"
-  },
   "author": "",
   "license": "ISC",
   "bugs": {
