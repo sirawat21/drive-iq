@@ -11,9 +11,9 @@ const Button = ({ children, icon = "none", buttonStyle = "default", ...props }) 
     },
     icon: {
       none: "",
-      loading: <LoadingIcon />,
-      adding: <AddingIcon />,
-      delete: <DeleteIcon />,
+      loading: <LoadingIcon className="w-6"/>,
+      adding: <AddingIcon className="w-6" />,
+      delete: <DeleteIcon className="w-6" />,
     }
   };
   return (
@@ -21,7 +21,7 @@ const Button = ({ children, icon = "none", buttonStyle = "default", ...props }) 
         className={`inline-flex items-center justify-center p-2  focus:outline-none focus:ring-2 focus:ring-inset ${CONFIG['style'][buttonStyle]}`}
         {...props}
       >
-        { CONFIG['icon'][icon] } {children}
+        { CONFIG['icon'][icon] } { children }
       </button>
   );
 };
