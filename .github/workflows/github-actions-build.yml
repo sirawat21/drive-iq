@@ -1,10 +1,10 @@
-name: Babel run build
+name: Task-2 build
 run-name: Task 2 - Testing build by ${{ github.actor }}
 on:
   push:
     branches: [task-2]
 jobs:
-  build:
+  task2:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
