@@ -1,5 +1,5 @@
 name: Babel run build
-run-name: Testing by ${{ github.actor }}
+run-name: [Task 2] Testing build by ${{ github.actor }}
 on:
   push:
     branches: [task-2]
