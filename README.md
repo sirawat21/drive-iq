@@ -1,7 +1,7 @@
 # Task 3 - SQL
 ![Result](https://i.imgur.com/S8olH0a.png)
 
-This query string in the figure locates in file "src/query.db.sql".
+The query string in the figure locates in file "src/query.db.sql".
 ## Project commands
 Start containers
 ```
