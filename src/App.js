@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setStoreData } from "./store/data/data.action";
 import { Frame, Table, Button } from "./components";
 
 /* App Configuration */
@@ -7,37 +8,44 @@ const CONFIG = {
 };
 
 function App() {
-  /* Set state for API data */
-  const [data, setData] = useState([]);
+  /* Set inital dispatch hook for further action */
+  const dispatch = useDispatch();
+  const dataFromStore = useSelector((state) => state.data.collegeLists);
 
   /* Load button handler */
   const loadButtonHandler = async () => {
     try {
+      // fetch data from api
       const response = await fetch(CONFIG["url"]);
       const responseData = await response.json();
-      setData(responseData);
+      // dispatch to store of data
+      dispatch(setStoreData(responseData));
     } catch (error) {
       console.error(error);
-      setData("API is not available");
     }
   };
 
   /* Add button handler */
   const addButtonHandler = () => {
-    if (data.length == 0) return;
-    setData([...data, data[0]]);
+    if (dataFromStore.length == 0) return;
+    // copy array by space oparator with add one copy of first item
+    const addCopyOfFirstRowToButtom = [...dataFromStore, dataFromStore[0]];
+    // dispatch to store of data
+    dispatch(setStoreData(addCopyOfFirstRowToButtom));
   };
 
   /* Delete button handler */
   const deleteButtonHandler = () => {
-    if (data.length == 0) return;
-    const trimLastRow = data.slice(0, data.length - 1);
-    setData(trimLastRow);
+    if (dataFromStore.length == 0) return;
+    // copy new arry from index 0 of old arry to one before last item
+    const trimLastRow = dataFromStore.slice(0, dataFromStore.length - 1);
+    // dispatch to store of data
+    dispatch(setStoreData(trimLastRow));
   };
 
   return (
     <Frame>
-      <div className="mx-8">
+     <div className="mx-8">
         <Button 
           buttonStyle="add" 
           icon="adding" 
@@ -60,7 +68,7 @@ function App() {
           DELETE
         </Button>
       </div>
-      <Table dataLists={data} />
+      <Table />
     </Frame>
   );
 }
