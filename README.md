@@ -2,7 +2,7 @@
 ## Description
 The application presents the college information from API, and providing three control buttons(ADD, LOAD, DELETE) for manipulating the information in table.
 ## Screenshot
-![](https://media.giphy.com/media/8VmwLy7sqVihyxP1vK/giphy.gif)
+![](https://media.giphy.com/media/c0TrMIAKMVFJOOWqsn/giphy.gif)
 ## API 
 |Source|URL|
 |---|---|
