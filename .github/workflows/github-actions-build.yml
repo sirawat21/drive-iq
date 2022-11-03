@@ -1,0 +1,22 @@
+name: React run build
+run-name: Testing by ${{ github.actor }}
+on:
+  push:
+    branches: [ task-1 ]
+  pull_request:
+    branches: [ task-1 ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  steps:
+    - name: Checkout to the repository
+      uses: actions/checkout@v2
+
+    - name: Create Node environment
+      uses: actions/setup-node@v2
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Test build
+      run: npm run build
