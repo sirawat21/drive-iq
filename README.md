@@ -1,4 +1,5 @@
 # Task 1 - API - React (Single Page Application)
+[![React run build](https://github.com/sirawat21/drive-iq/actions/workflows/github-actions-build.yml/badge.svg)](https://github.com/sirawat21/drive-iq/actions/workflows/github-actions-build.yml)
 ## Description
 The application presents the college information from API, and providing three control buttons(ADD, LOAD, DELETE) for manipulating the information in table.
 ## Screenshot
