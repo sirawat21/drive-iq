@@ -2,7 +2,8 @@ name: Build Task2
 run-name: Testing build by ${{ github.actor }}
 on:
   push:
-    branches: [task-2]
+    branches:
+      - task-2
 jobs:
   build:
     runs-on: ubuntu-latest
