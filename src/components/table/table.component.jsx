@@ -49,7 +49,7 @@ const Table = () => {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
-            {tableData != "" &&
+            {tableData !== "" &&
               tableData.map((data, key) => (
                 <tr key={key}>
                   <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
@@ -79,7 +79,7 @@ const Table = () => {
           </tbody>
         </table>
       </div>
-      {tableData == "" && (
+      {tableData.length === 0 && (
         <p className="text-gray-500 text-lg text-center">
           No preset data or click the load button.
         </p>

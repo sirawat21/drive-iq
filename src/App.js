@@ -29,7 +29,7 @@ function App() {
 
   /* Add button handler */
   const addButtonHandler = () => {
-    if (dataFromStore.length == 0) return;
+    if (dataFromStore.length === 0) return;
     // copy array by space oparator with add one copy of first item
     const addCopyOfFirstRowToButtom = [...dataFromStore, dataFromStore[0]];
     // dispatch to store of data
@@ -38,7 +38,7 @@ function App() {
 
   /* Delete button handler */
   const deleteButtonHandler = () => {
-    if (dataFromStore.length == 0) return;
+    if (dataFromStore.length === 0) return;
     // copy new arry from index 0 of old arry to one before last item
     const trimLastRow = dataFromStore.slice(0, dataFromStore.length - 1);
     // dispatch to store of data
