@@ -25,44 +25,40 @@ function App() {
   /* Add button handler */
   const addButtonHandler = () => {
     if (data.length == 0) return;
-    try {
-      setData([...data, data[0]]);
-    } catch (error) {
-      console.error(error);
-    }
+    setData([...data, data[0]]);
   };
 
   /* Delete button handler */
   const deleteButtonHandler = () => {
     if (data.length == 0) return;
-    try {
-      const trimLastRow = data.slice(0, data.length - 1);
-      setData(trimLastRow);
-    } catch (error) {
-      console.error(error);
-    }
+    const trimLastRow = data.slice(0, data.length - 1);
+    setData(trimLastRow);
   };
 
   return (
     <Frame>
-      <div className="grid grid-rows-1 grid-flow-col">
-        <div>
-          <Button icon="loading" onClick={loadButtonHandler}>
-            LOAD
-          </Button>
-        </div>
-        <div>
-          <Button buttonStyle="add" icon="adding" onClick={addButtonHandler}>
-            ADD
-          </Button>
-          <Button
-            buttonStyle="delete"
-            icon="delete"
-            onClick={deleteButtonHandler}
-          >
-            DELETE
-          </Button>
-        </div>
+      <div className="mx-8">
+        <Button 
+          buttonStyle="add" 
+          icon="adding" 
+          onClick={addButtonHandler}
+        >
+          ADD
+        </Button>
+        <Button 
+          buttonStyle="load" 
+          icon="loading" 
+          onClick={loadButtonHandler}
+        >
+          LOAD
+        </Button>
+        <Button
+          buttonStyle="delete"
+          icon="delete"
+          onClick={deleteButtonHandler}
+        >
+          DELETE
+        </Button>
       </div>
       <Table dataLists={data} />
     </Frame>
